@@ -1,0 +1,14 @@
+{
+  "welcomeFile": "/react_app/index.html",
+  "authenticationMethod": "route",
+  "logout": {
+    "logoutEndpoint": "/do/logout"
+  },
+  "routes": [
+    {
+      "source": "^/react_app/(.*)$",
+      "target": "$1",
+      "localDir": "webapp"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+_schema-version: "3.2"
+ID: forum_app
+version: 0.0.2
+
+parameters:
+  deploy_mode: html5-repo
+  enable-parallel-deployments: true
+
+modules:
+  - name: react_app
+    type: html5
+    path: react_app
+    build-parameters:
+      builder: custom
+      commands:
+        - npm install
+        - npm run build
+      supported-platforms: []
+      build-result: build  
